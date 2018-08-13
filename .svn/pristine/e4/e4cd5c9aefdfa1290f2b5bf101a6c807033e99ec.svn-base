@@ -1,0 +1,64 @@
+package com.jjshome.viewer.controller;
+
+import java.util.Map;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.web.AbstractErrorController;
+import org.springframework.boot.autoconfigure.web.ErrorAttributes;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.ModelAndView;
+
+/**
+ * @Description: error page 配置覆盖
+ * 1.实现并注册ErrorController接口,可以覆盖error page路径
+ * 2.错误内容获取处理,来自AbstractErrorController
+ * @author liaohongwei
+ * @date 2016年7月7日 下午4:36:56
+ */
+@Controller
+@RequestMapping(ViewerErrorController.ERROR_PATH)
+public class ViewerErrorController extends AbstractErrorController {
+
+	@Autowired
+	public ViewerErrorController(ErrorAttributes errorAttributes) {
+		super(errorAttributes);
+	}
+
+	/**
+	 * @Fields ERROR_TEMPLATE_PATH : error page覆盖
+	 */
+	public static final String ERROR_PATH = "/error";
+
+	@Override
+	public String getErrorPath() {
+		return ERROR_PATH;
+	}
+
+	@RequestMapping(produces = "text/html")
+	public ModelAndView errorHtml(HttpServletRequest request,
+			HttpServletResponse response) {
+		response.setStatus(getStatus(request).value());
+		Map<String, Object> model = getErrorAttributes(request,
+				getTraceParameter(request));
+		// 业务需要
+		model.put("msg", "此文件无法识别，不能预览，请下载到本地浏览");
+		return new ModelAndView("/error/error", model);
+	}
+
+	@RequestMapping
+	@ResponseBody
+	public ResponseEntity<Map<String, Object>> error(HttpServletRequest request) {
+		Map<String, Object> body = getErrorAttributes(request,
+				getTraceParameter(request));
+		HttpStatus status = getStatus(request);
+		return new ResponseEntity<Map<String, Object>>(body, status);
+	}
+
+}

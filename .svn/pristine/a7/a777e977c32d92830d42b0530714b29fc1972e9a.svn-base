@@ -1,0 +1,29 @@
+package com.jjshome.viewer.service;
+
+import java.util.List;
+
+import com.jjshome.viewer.model.FileModel;
+
+/**
+ * @Description:
+ * @author liaohongwei
+ * @date 2016年6月24日 上午11:31:32
+ */
+public interface FileService {
+	/**
+	 * @Description: (这里用一句话描述这个方法的作用)
+	 * @param pathId
+	 * @return FileModel
+	 * @author liaohongwei
+	 * @date 2016年6月24日 上午11:34:08
+	 */
+	public FileModel findFileModelByPathId(String pathId);
+
+	/**
+	 * @Description: 查询说与key
+	 * @return List<String>
+	 * @author liaohongwei
+	 * @date 2016年6月27日 下午5:12:49
+	 */
+	public List<String> findAllKeys();
+}

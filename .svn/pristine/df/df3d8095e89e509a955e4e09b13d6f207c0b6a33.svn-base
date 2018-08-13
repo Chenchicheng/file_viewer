@@ -1,0 +1,65 @@
+package com.jjshome.viewer.dao;
+
+import java.io.InputStream;
+import java.util.List;
+
+import com.jjshome.viewer.model.FileModel;
+
+public interface FileDao {
+
+	/**
+	 * @Description:
+	 * @param is
+	 * @param fileName
+	 * @return FileModel
+	 * @author liaohongwei
+	 * @date 2016年6月23日 下午5:33:02
+	 */
+	public void saveFile(InputStream is, FileModel fileModel);
+
+	/**
+	 * @Description: 查找文件信息
+	 * @param pathId
+	 * @return FileModel
+	 * @author liaohongwei
+	 * @date 2016年6月24日 下午6:08:26
+	 */
+	public FileModel findByPathId(String pathId);
+
+	/**
+	 * @Description: 获取所有key
+	 * @return List<String>
+	 * @author liaohongwei
+	 * @date 2016年6月27日 下午4:31:11
+	 */
+	public List<String> findAllKeys();
+
+	/**
+	 * @Description: 删除缓存map中的数据,并非真正的删除文件
+	 * @param pathId
+	 * @return FileModel
+	 * @author liaohongwei
+	 * @date 2016年6月27日 下午4:12:01
+	 */
+	public FileModel removeFromMap(String pathId);
+
+	/**
+	 * @Description: 回滚remove
+	 * @param fileModel
+	 * @return int
+	 * @author liaohongwei
+	 * @date 2016年6月27日 下午4:22:23
+	 */
+	public int rollbackFromMap(FileModel fileModel);
+
+	/**
+	 * @Description: 删除该filemodel所有先关数据
+	 * @param fileModel
+	 * @return int
+	 * @author liaohongwei
+	 * @date 2016年6月27日 下午4:13:05
+	 */
+	public int delete(FileModel fileModel);
+
+
+}

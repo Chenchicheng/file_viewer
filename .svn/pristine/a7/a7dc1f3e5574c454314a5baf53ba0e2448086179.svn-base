@@ -1,0 +1,186 @@
+package com.jjshome.viewer.model;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
+
+public class FileModel implements Serializable {
+
+	private static final long serialVersionUID = 1L;
+	/**
+	 * @Fields STATE_WX : 无效
+	 */
+	public static final int STATE_WX = 0;
+	/**
+	 * @Fields STATE_WXZ : 未下载
+	 */
+	public static final int STATE_WXZ = 1;
+	/**
+	 * @Fields STATE_YXZ : 已下载
+	 */
+	public static final int STATE_YXZ = 2;
+	/**
+	 * @Fields STATE_YZH : 已转换
+	 */
+	public static final int STATE_YZH = 3;
+
+	/**
+	 * @Fields pathId : 唯一编码
+	 */
+	private String pathId;
+
+	/**
+	 * @Fields original : 来源,具有唯一性
+	 */
+	private String original;
+
+	/**
+	 * @Fields originalMIMEType : 从数据源获取的多媒体类型
+	 */
+	private String originalMIMEType;
+
+	/**
+	 * @Fields createMs : 创建时间,毫秒数
+	 */ 
+	private long createMs;
+	
+	/**
+	 * @Fields limitMs : 过期毫秒数
+	 */
+	private long limitMs;
+
+	/**
+	 * @Fields dir : 每次转换都需要一个目录来存储操作用的文件
+	 */ 
+	private String dir;
+	
+	/**
+	 * @Fields originalFile : 从源下载下来的文件
+	 */
+	private String originalFile;
+
+	/**
+	 * @Fields previewPdf : 预览用pdf文件
+	 */
+	private String previewPdf;
+
+	/**
+	 * @Fields filePaths : 操作时产生附加文件
+	 */
+	private List<String> filePaths;
+
+	/**
+	 * @Fields state : 文件状态 0 无效,1 未下载,2 已下载,3 已转换
+	 */
+	private int state;
+
+	public String getPathId() {
+		return pathId;
+	}
+
+	public void setPathId(String pathId) {
+		this.pathId = pathId;
+	}
+
+	public long getCreateMs() {
+		return createMs;
+	}
+
+	public void setCreateMs(long createMs) {
+		this.createMs = createMs;
+	}
+
+	public String getDir() {
+		return dir;
+	}
+
+	public void setDir(String dir) {
+		this.dir = dir;
+	}
+
+	public List<String> getFilePaths() {
+		return filePaths;
+	}
+
+	public void setFilePaths(List<String> filePaths) {
+		this.filePaths = filePaths;
+	}
+
+	public String getOriginal() {
+		return original;
+	}
+
+	public void setOriginal(String original) {
+		this.original = original;
+	}
+
+	public long getLimitMs() {
+		return limitMs;
+	}
+
+	public void setLimitMs(long limitMs) {
+		this.limitMs = limitMs;
+	}
+
+	public String getOriginalMIMEType() {
+		return originalMIMEType;
+	}
+
+	public void setOriginalMIMEType(String originalMIMEType) {
+		this.originalMIMEType = originalMIMEType;
+	}
+
+	public String getOriginalFile() {
+		return originalFile;
+	}
+
+	public void setOriginalFile(String originalFile) {
+		this.originalFile = originalFile;
+	}
+
+	public String getPreviewPdf() {
+		return previewPdf;
+	}
+
+	public void setPreviewPdf(String previewPdf) {
+		this.previewPdf = previewPdf;
+	}
+
+	public int getState() {
+		return state;
+	}
+
+	public void setState(int state) {
+		this.state = state;
+	}
+
+	@Override
+	public FileModel clone() {
+		FileModel tmp = new FileModel();
+		tmp.setPathId(this.pathId);
+		tmp.setOriginal(this.original);
+		tmp.setOriginalMIMEType(this.originalMIMEType);
+		tmp.setCreateMs(this.createMs);
+		tmp.setLimitMs(this.limitMs);
+		tmp.setDir(this.dir);
+		tmp.setOriginalFile(this.originalFile);
+		tmp.setPreviewPdf(this.previewPdf);
+		tmp.setState(this.state);
+		if(this.filePaths == null){
+			tmp.setFilePaths(null);
+		}else{
+			List<String> tmpList = new ArrayList<String>();
+			tmpList.addAll(this.filePaths);
+			tmp.setFilePaths(tmpList);
+		}
+		return tmp;
+	}
+
+	@Override
+	public String toString() {
+		return "FileModel [pathId=" + pathId + ", original=" + original
+				+ ", originalMIMEType=" + originalMIMEType + ", createMs="
+				+ createMs + ", limitMs=" + limitMs + ", dir=" + dir
+				+ ", filePaths=" + filePaths + "]";
+	}
+}

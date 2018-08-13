@@ -1,0 +1,30 @@
+server:
+  port: 8083
+
+#操作先关文件存放的根目录,此目录在初始化时候 里面的内容会被删除
+tmp:
+  root: C:/tmp/conventer
+  rootTemp: C:/temp
+soffice:
+#openoffice 安装位置
+  home: C:/Program Files (x86)/OpenOffice 4
+#openoffice 链接端口
+  port: 8101
+#预览纯文本txt需要转码,window下为GBK,linux下为UTF-8
+  defaultCharset: GBK
+
+#文本类型文件后缀
+text:
+  type: txt|sql|java|js|html|xml|html|css
+#图片类型
+img:
+  type: jpeg|jpg|png|bmp
+#Office文件类型
+office:
+  type: doc|docx|xlsx|xls|ppt|pptx
+#压缩文件类型
+compress:
+  type: zip|rar|jar|gzip
+#pdf文件
+pdf:
+  type: pdf
