@@ -34,7 +34,6 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file-conventer/src/main/resources/static/layer/theme/default/loading-1.gif" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file-conventer/src/main/resources/static/layer/theme/default/loading-2.gif" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file-conventer/src/test/java/com/filepreview" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file-conventer/file-conventer.iml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file-conventer/src/main/java/com/filepreview/config/MvcConfigur.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file-conventer/src/main/resources/static/css/MPreview.css" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file-conventer/src/main/resources/static/css/base.css" />
@@ -62,10 +61,7 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file-conventer/src/test/java/com/filepreview/PdfTest.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file-conventer/src/test/java/com/filepreview/ZipReader.java" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file-conventer/.gitignore" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/file-conventer/.mvn/wrapper/maven-wrapper.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file-conventer/mvnw.cmd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file-conventer/src/main/java/com/jjshome/service/DownloadNetFileService.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/jodconverter-web/src/main/java/com/jjshome/FilePreviewApplication.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/jodconverter-web/src/main/java/com/jjshome/config/RedissonConfig.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/jodconverter-web/src/main/java/com/jjshome/extend/ControlDocumentFormatRegistry.java" afterPath="" />
@@ -84,13 +80,10 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/jodconverter-web/src/main/java/com/jjshome/utils/ZipReader.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/jodconverter-web/src/main/java/com/jjshome/web/controller/FileController.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/jodconverter-web/src/main/java/com/jjshome/web/controller/OnlinePreviewController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.mvn" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.mvn/wrapper" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file-conventer/.mvn" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/file-conventer/.mvn/wrapper" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/file-conventer/.mvn/wrapper/maven-wrapper.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file-conventer/mvnw" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/jodconverter-web/src/main/java/com/jjshome" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/jodconverter-web/src/main/java/com/jjshome/config" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/jodconverter-web/src/main/java/com/jjshome/extend" afterPath="" />
@@ -100,15 +93,11 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/jodconverter-web/src/main/java/com/jjshome/web" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/jodconverter-web/src/main/java/com/jjshome/web/controller" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/file-conventer/src/main/resources/templates/upload/sorry.jpg" afterPath="$PROJECT_DIR$/file-conventer/src/main/resources/templates/upload/sorry.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/file-conventer/pom.xml" afterPath="$PROJECT_DIR$/file-conventer/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/file-conventer/src/main/java/com/filepreview/service/DownloadNetFileService.java" afterPath="$PROJECT_DIR$/file-conventer/src/main/java/com/filepreview/service/DownloadNetFileService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/file-conventer/src/main/resources/application.yml" afterPath="$PROJECT_DIR$/file-conventer/src/main/resources/application.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/file-conventer/src/test/java/com/filepreview/ConventerTest.java" afterPath="$PROJECT_DIR$/file-conventer/src/test/java/com/filepreview/ConventerTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/file-conventer/src/test/java/com/filepreview/DownLoadTest.java" afterPath="$PROJECT_DIR$/file-conventer/src/test/java/com/filepreview/DownLoadTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/file-conventer/src/test/java/com/filepreview/FileConventerApplicationTests.java" afterPath="$PROJECT_DIR$/file-conventer/src/test/java/com/filepreview/FileConventerApplicationTests.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/file-conventer/src/test/java/com/filepreview/FileTest.java" afterPath="$PROJECT_DIR$/file-conventer/src/test/java/com/filepreview/FileTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jodconverter-core/pom.xml" afterPath="$PROJECT_DIR$/jodconverter-core/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MOVED" beforePath="$PROJECT_DIR$/file-conventer/src/main/java/com/jjshome/FileConventerApplication.java" afterPath="$PROJECT_DIR$/file-conventer/src/main/java/com/filepreview/FileConventerApplication.java" />
       <change type="MOVED" beforePath="$PROJECT_DIR$/file-conventer/src/main/java/com/jjshome/controller/ConventerController.java" afterPath="$PROJECT_DIR$/file-conventer/src/main/java/com/filepreview/controller/ConventerController.java" />
       <change type="MOVED" beforePath="$PROJECT_DIR$/file-conventer/src/main/java/com/jjshome/conventer/CompressedFileConventer.java" afterPath="$PROJECT_DIR$/file-conventer/src/main/java/com/filepreview/conventer/CompressedFileConventer.java" />
@@ -119,6 +108,7 @@
       <change type="MOVED" beforePath="$PROJECT_DIR$/file-conventer/src/main/java/com/jjshome/dao/FileDao.java" afterPath="$PROJECT_DIR$/file-conventer/src/main/java/com/filepreview/dao/FileDao.java" />
       <change type="MOVED" beforePath="$PROJECT_DIR$/file-conventer/src/main/java/com/jjshome/dao/impl/FileDaoImpl.java" afterPath="$PROJECT_DIR$/file-conventer/src/main/java/com/filepreview/dao/impl/FileDaoImpl.java" />
       <change type="MOVED" beforePath="$PROJECT_DIR$/file-conventer/src/main/java/com/jjshome/model/FileModel.java" afterPath="$PROJECT_DIR$/file-conventer/src/main/java/com/filepreview/model/FileModel.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/file-conventer/src/main/java/com/jjshome/service/DownloadNetFileService.java" afterPath="$PROJECT_DIR$/file-conventer/src/main/java/com/filepreview/service/DownloadNetFileService.java" />
       <change type="MOVED" beforePath="$PROJECT_DIR$/file-conventer/src/main/java/com/jjshome/service/FileConventerService.java" afterPath="$PROJECT_DIR$/file-conventer/src/main/java/com/filepreview/service/FileConventerService.java" />
       <change type="MOVED" beforePath="$PROJECT_DIR$/file-conventer/src/main/java/com/jjshome/service/FileService.java" afterPath="$PROJECT_DIR$/file-conventer/src/main/java/com/filepreview/service/FileService.java" />
       <change type="MOVED" beforePath="$PROJECT_DIR$/file-conventer/src/main/java/com/jjshome/service/impl/DownloadNetFileServiceImpl.java" afterPath="$PROJECT_DIR$/file-conventer/src/main/java/com/filepreview/service/impl/DownloadNetFileServiceImpl.java" />
@@ -218,21 +208,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="FileCharsetDetector.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/file-conventer/src/main/java/com/filepreview/util/FileCharsetDetector.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="37">
-              <caret line="119" column="11" lean-forward="true" selection-start-line="119" selection-start-column="11" selection-end-line="119" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="FileUtil.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/file-conventer/src/main/java/com/filepreview/util/FileUtil.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="139">
-              <caret line="226" column="32" lean-forward="true" selection-start-line="226" selection-start-column="32" selection-end-line="226" selection-end-column="32" />
+              <caret line="226" column="32" lean-forward="false" selection-start-line="226" selection-start-column="32" selection-end-line="226" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -242,7 +222,7 @@
         <entry file="file://$PROJECT_DIR$/file-conventer/src/main/java/com/filepreview/util/SHAUtil.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-473">
-              <caret line="25" column="22" lean-forward="true" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+              <caret line="25" column="22" lean-forward="false" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -272,7 +252,7 @@
         <entry file="file://$PROJECT_DIR$/file-conventer/src/main/java/com/filepreview/model/FileModel.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1751">
-              <caret line="127" column="0" lean-forward="true" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
+              <caret line="127" column="0" lean-forward="false" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -282,7 +262,7 @@
         <entry file="file://$PROJECT_DIR$/file-conventer/src/main/java/com/filepreview/dao/FileDao.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="343">
-              <caret line="48" column="18" lean-forward="true" selection-start-line="48" selection-start-column="18" selection-end-line="48" selection-end-column="18" />
+              <caret line="48" column="18" lean-forward="false" selection-start-line="48" selection-start-column="18" selection-end-line="48" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -292,7 +272,7 @@
         <entry file="file://$PROJECT_DIR$/file-conventer/src/main/java/com/filepreview/dao/impl/FileDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
-              <caret line="180" column="31" lean-forward="true" selection-start-line="180" selection-start-column="31" selection-end-line="180" selection-end-column="31" />
+              <caret line="180" column="31" lean-forward="false" selection-start-line="180" selection-start-column="31" selection-end-line="180" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -308,11 +288,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConventerController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ConventerController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/file-conventer/src/main/java/com/filepreview/controller/ConventerController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="22" column="11" lean-forward="true" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+              <caret line="22" column="11" lean-forward="false" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="42" lean-forward="true" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -419,7 +409,6 @@
         <option value="$PROJECT_DIR$/jodconverter-core/pom.xml" />
         <option value="$PROJECT_DIR$/jodconverter-web/pom.xml" />
         <option value="$PROJECT_DIR$/file-conventer/pom.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/file-conventer/src/main/resources/templates/ppt.ftl" />
         <option value="$PROJECT_DIR$/file-conventer/src/main/java/com/filepreview/dao/impl/FileDaoImpl.java" />
         <option value="$PROJECT_DIR$/file-conventer/src/main/java/com/filepreview/dao/FileDao.java" />
@@ -427,6 +416,7 @@
         <option value="$PROJECT_DIR$/file-conventer/src/main/java/com/filepreview/service/FileService.java" />
         <option value="$PROJECT_DIR$/file-conventer/src/main/java/com/filepreview/timer/ClearFileTimer.java" />
         <option value="$PROJECT_DIR$/file-conventer/src/main/java/com/filepreview/util/FileCharsetDetector.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -1708,7 +1698,7 @@
       <workItem from="1533042434472" duration="2128000" />
       <workItem from="1533083612410" duration="595000" />
       <workItem from="1534145063854" duration="2447000" />
-      <workItem from="1534148262208" duration="8884000" />
+      <workItem from="1534148262208" duration="9597000" />
     </task>
     <task id="LOCAL-00001" summary="文件预览功能实现">
       <created>1514277622377</created>
@@ -1774,7 +1764,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="346223000" />
+    <option name="totallyTimeSpent" value="346936000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1787,7 +1777,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1802,7 +1791,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19597316" sideWeight="0.49426934" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.48456377" sideWeight="0.49426934" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3261745" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2442953" sideWeight="0.49713466" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1871,14 +1860,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/jodconverter-core/src/main/java/com/filepreview/org/artofsolving/jodconverter/AbstractConversionTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="31" column="22" lean-forward="false" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jodconverter-core/src/main/java/com/filepreview/org/artofsolving/jodconverter/OfficeDocumentConverter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -2174,8 +2155,8 @@
         <state relative-caret-position="343">
           <caret line="31" column="31" lean-forward="false" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
           <folding>
-            <element signature="e#764#765#0" expanded="true" />
-            <element signature="e#826#827#0" expanded="true" />
+            <element signature="e#764#765#0" expanded="false" />
+            <element signature="e#826#827#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2199,7 +2180,7 @@
     <entry file="file://$PROJECT_DIR$/file-conventer/src/main/java/com/filepreview/util/FileUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="139">
-          <caret line="226" column="32" lean-forward="true" selection-start-line="226" selection-start-column="32" selection-end-line="226" selection-end-column="32" />
+          <caret line="226" column="32" lean-forward="false" selection-start-line="226" selection-start-column="32" selection-end-line="226" selection-end-column="32" />
           <folding />
         </state>
       </provider>
@@ -2207,7 +2188,7 @@
     <entry file="file://$PROJECT_DIR$/file-conventer/src/main/java/com/filepreview/util/SHAUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-473">
-          <caret line="25" column="22" lean-forward="true" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+          <caret line="25" column="22" lean-forward="false" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
           <folding />
         </state>
       </provider>
@@ -2231,7 +2212,7 @@
     <entry file="file://$PROJECT_DIR$/file-conventer/src/main/java/com/filepreview/model/FileModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1751">
-          <caret line="127" column="0" lean-forward="true" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
+          <caret line="127" column="0" lean-forward="false" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -2239,7 +2220,7 @@
     <entry file="file://$PROJECT_DIR$/file-conventer/src/main/java/com/filepreview/dao/FileDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="343">
-          <caret line="48" column="18" lean-forward="true" selection-start-line="48" selection-start-column="18" selection-end-line="48" selection-end-column="18" />
+          <caret line="48" column="18" lean-forward="false" selection-start-line="48" selection-start-column="18" selection-end-line="48" selection-end-column="18" />
           <folding />
         </state>
       </provider>
@@ -2247,7 +2228,7 @@
     <entry file="file://$PROJECT_DIR$/file-conventer/src/main/java/com/filepreview/dao/impl/FileDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
-          <caret line="180" column="31" lean-forward="true" selection-start-line="180" selection-start-column="31" selection-end-line="180" selection-end-column="31" />
+          <caret line="180" column="31" lean-forward="false" selection-start-line="180" selection-start-column="31" selection-end-line="180" selection-end-column="31" />
           <folding />
         </state>
       </provider>
@@ -2263,7 +2244,15 @@
     <entry file="file://$PROJECT_DIR$/file-conventer/src/main/java/com/filepreview/controller/ConventerController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="22" column="11" lean-forward="true" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+          <caret line="22" column="11" lean-forward="false" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="42" lean-forward="true" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
           <folding />
         </state>
       </provider>

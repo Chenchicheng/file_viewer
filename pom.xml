@@ -4,16 +4,15 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.filepreview</groupId>
-	<artifactId>jjs_viewer</artifactId>
+	<artifactId>file_viewer</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
     <modules>
         <module>jodconverter-core</module>
-		<module>jodconverter-web</module>
 		<module>file-conventer</module>
 	</modules>
     <packaging>pom</packaging>
 
-	<name>jjs_viewer_v2.0.0</name>
+	<name>file_viewer</name>
 	<description>Demo project for Spring Boot</description>
 
 </project>
