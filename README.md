@@ -20,6 +20,18 @@
 * 压缩文件先解压到本地，再利用Ztree插件（一个很强大的文件展示插件）做前端的展示
 
 ## 文件预览效果
-> 文本文件
-![输入图片说明](https://github.com/Chenchicheng/file_viewer/blob/master/file-conventer/src/main/resources/static/images/sorry.jpg "1.png")
+> 压缩文件
+![输入图片说明](https://github.com/Chenchicheng/file_viewer/blob/master/file-conventer/src/main/resources/static/images/compress.png "1.png")
+
+> excel文件
+![输入图片说明](https://github.com/Chenchicheng/file_viewer/blob/master/file-conventer/src/main/resources/static/images/excel.png "1.png")
+
+> word文件
+![输入图片说明](https://github.com/Chenchicheng/file_viewer/blob/master/file-conventer/src/main/resources/static/images/paper.png "1.png")
+
+> ppt文件
+![输入图片说明](https://github.com/Chenchicheng/file_viewer/blob/master/file-conventer/src/main/resources/static/images/ppt.png "1.png")
+
+> 图片
+![输入图片说明](https://github.com/Chenchicheng/file_viewer/blob/master/file-conventer/src/main/resources/static/images/image.png "1.png")
 
