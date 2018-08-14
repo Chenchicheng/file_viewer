@@ -20,6 +20,6 @@
 * 压缩文件先解压到本地，再利用Ztree插件（一个很强大的文件展示插件）做前端的展示
 
 ## 文件预览效果
->文本文件
-![输入图片说明](https://img-blog.csdn.net/20180113201711325?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvY2NjMTIzNF8=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast "1.png" )
+> 文本文件
+![输入图片说明](https://gitee.com/uploads/images/2017/1219/173717_934cb068_492218.png "1.png")
 
