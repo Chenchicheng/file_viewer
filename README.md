@@ -18,3 +18,8 @@
 * 文本文件转换编码为utf-8
 * office文件选择将word文档转为pdf文件，xls表格和ppt文件转为html文件
 * 压缩文件先解压到本地，再利用Ztree插件（一个很强大的文件展示插件）做前端的展示
+
+## 文件预览效果
+>文本文件
+![输入图片说明](https://img-blog.csdn.net/20180113201711325?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvY2NjMTIzNF8=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast )
+
