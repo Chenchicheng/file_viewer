@@ -21,7 +21,7 @@ public class MvcConfigur extends WebMvcConfigurerAdapter {
         FreeMarkerViewResolver resolver = new FreeMarkerViewResolver();
         resolver.setCache(true);
         resolver.setPrefix("");
-        resolver.setSuffix(".ftl");
+        resolver.setSuffix(".html");
         resolver.setContentType("text/html; charset=UTF-8");
         return resolver;
     }
