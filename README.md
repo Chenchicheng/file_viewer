@@ -21,17 +21,17 @@
 
 ## 文件预览效果
 > 压缩文件
-![输入图片说明](https://github.com/Chenchicheng/file_viewer/blob/master/file-conventer/src/main/resources/static/images/compress.png "1.png")
+![输入图片说明](https://github.com/Chenchicheng/file_viewer/blob/master/file-conventer/src/main/resources/static/images/compress.png "压缩文件预览.png")
 
 > excel文件
-![输入图片说明](https://github.com/Chenchicheng/file_viewer/blob/master/file-conventer/src/main/resources/static/images/excel.png "1.png")
+![输入图片说明](https://github.com/Chenchicheng/file_viewer/blob/master/file-conventer/src/main/resources/static/images/excel.png "excel文件预览.png")
 
 > word文件
-![输入图片说明](https://github.com/Chenchicheng/file_viewer/blob/master/file-conventer/src/main/resources/static/images/paper.png "1.png")
+![输入图片说明](https://github.com/Chenchicheng/file_viewer/blob/master/file-conventer/src/main/resources/static/images/paper.png "word文件预览.png")
 
 > ppt文件
-![输入图片说明](https://github.com/Chenchicheng/file_viewer/blob/master/file-conventer/src/main/resources/static/images/ppt.png "1.png")
+![输入图片说明](https://github.com/Chenchicheng/file_viewer/blob/master/file-conventer/src/main/resources/static/images/ppt.png "ppt文件预览.png")
 
 > 图片
-![输入图片说明](https://github.com/Chenchicheng/file_viewer/blob/master/file-conventer/src/main/resources/static/images/image.png "1.png")
+![输入图片说明](https://github.com/Chenchicheng/file_viewer/blob/master/file-conventer/src/main/resources/static/images/image.png "图片预览.png")
 
