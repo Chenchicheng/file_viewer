@@ -21,5 +21,5 @@
 
 ## 文件预览效果
 > 文本文件
-![输入图片说明](https://gitee.com/uploads/images/2017/1219/173717_934cb068_492218.png "1.png")
+![输入图片说明](https://github.com/Chenchicheng/file_viewer/blob/master/file-conventer/src/main/resources/static/images/sorry.jpg "1.png")
 
