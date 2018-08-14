@@ -1,12 +1,11 @@
 
 ## 该项目主要用于文件的预览，使用springboot搭建
-支持预览文件的类型
-------
-###### 文本文件 如 txt | sql | java | js | html | xml | html | css 等
-###### 图像文件 如 jpeg | jpg | png | bmp 等
-###### 压缩文件 如 zip | rar | jar | gzip 等
-###### office文件 如 doc | docx | xlsx | xls | ppt | pptx 等
-###### pdf文件
+## 支持预览文件的类型
+* 文本文件 如 txt | sql | java | js | html | xml | html | css 等
+* 图像文件 如 jpeg | jpg | png | bmp 等
+* 压缩文件 如 zip | rar | jar | gzip 等
+* office文件 如 doc | docx | xlsx | xls | ppt | pptx 等
+* pdf文件
 
 ## 使用方法
 * 拉取项目到本地
