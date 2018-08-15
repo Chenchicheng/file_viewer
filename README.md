@@ -14,9 +14,9 @@
 * 运行FileConventerApplication，启动项目，访问地址为：localhost:(端口号)/fileConventer?filePath=http://p7ob9suqn.bkt.clouddn.com/layer-v3.1.1.zip
 
 ## 转换规则
-* 图片不进行转换
+* 图片不进行转换,使用viewer.js展示
 * 文本文件转换编码为utf-8
-* office文件选择将word文档转为pdf文件，xls表格和ppt文件转为html文件
+* office文件选择将word文档转为pdf文件，xls表格转为html文件，ppt文件转为图片
 * 压缩文件先解压到本地，再利用Ztree插件（一个很强大的文件展示插件）做前端的展示
 
 ## 文件预览效果
