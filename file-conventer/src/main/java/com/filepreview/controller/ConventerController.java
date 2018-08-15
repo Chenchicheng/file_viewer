@@ -9,13 +9,20 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.util.ClassUtils;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 
+import javax.servlet.ServletContext;
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.*;
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by chicheng on 2017/12/28.
@@ -50,6 +57,7 @@ public class ConventerController {
     @Value("${pdf.type}")
     private String pdfType;
 
+    private Map<String, String> pptMap = new HashMap<>();
 
     /**
      * 文件转换：1、从url地址下载文件 2、转换文件
@@ -59,7 +67,8 @@ public class ConventerController {
      * @return String
      */
     @RequestMapping("/fileConventer")
-    public String fileConventer(String filePath, Model model) throws UnsupportedEncodingException {
+    public String fileConventer(String filePath, Model model, HttpServletRequest request)
+            throws UnsupportedEncodingException {
         // 先去查询,如果存在,不需要转化文档,为找到有效安全的url编码,所以这里使用循环来判断当前文件是否存在
         FileModel oldFileModel = null;
         List<String> keys = this.fileService.findAllKeys();
@@ -72,7 +81,7 @@ public class ConventerController {
         }
         // 文件已下载，不需要转换
         if (oldFileModel != null) {
-            return previewUrl(oldFileModel, model);
+            return previewUrl(oldFileModel, model, request);
         } else {
             FileModel fileModel = new FileModel();
             // 文件来源url
@@ -91,7 +100,7 @@ public class ConventerController {
             if (fileModel.getState() != FileModel.STATE_YZH) {
                 throw new RuntimeException("convert fail.");
             }
-            return previewUrl(fileModel, model);
+            return previewUrl(fileModel, model, request);
         }
     }
 
@@ -102,7 +111,8 @@ public class ConventerController {
      * @throws UnsupportedEncodingException
      * @return String
      */
-    private String previewUrl(FileModel fileModel, Model model) throws UnsupportedEncodingException {
+    private String previewUrl(FileModel fileModel, Model model, HttpServletRequest request)
+            throws UnsupportedEncodingException {
         StringBuffer previewUrl = new StringBuffer();
         previewUrl.append("/viewer/document/");
         // pathId确定预览文件
@@ -127,17 +137,18 @@ public class ConventerController {
                 model.addAttribute("fileTree", fileModel.getFileTree());
                 return "compress";
             } else if (this.officeType.contains(subfix.toLowerCase())) {
-                if ("xlsx".equalsIgnoreCase(subfix.toLowerCase()) ||
-                        "xls".equalsIgnoreCase(subfix.toLowerCase())) {
-                    return "office";
-                }
                 if ("pptx".equalsIgnoreCase(subfix.toLowerCase()) ||
                         "ppt".equalsIgnoreCase(subfix.toLowerCase())) {
                     List<String> imgFiles = fileService.getImageFilesOfPPT(fileModel.getPathId());
-                    model.addAttribute("data", imgFiles.toArray());
-                    return "html";
+                    String imgPaths = "";
+                    for(String s : imgFiles) {
+                        imgPaths +=(fileModel.getPathId() + "/resource/"
+                                + s.substring(s.lastIndexOf("\\"), s.length()) + ",");
+                    }
+                    model.addAttribute("imgPaths", imgPaths);
+                    return "ppt";
                 } else {
-                    return "html";
+                    return "office";
                 }
             }
         } else {
@@ -154,9 +165,25 @@ public class ConventerController {
      * @return
      */
     @RequestMapping(value = "/viewer/document/{pathId}", method = RequestMethod.GET)
+    @ResponseBody
     public void onlinePreview(@PathVariable String pathId, String fileFullPath, HttpServletResponse response) throws IOException {
 
-        // 根据pathId获取fileModel
+        /*if(pathId.indexOf("img") != -1) {
+            System.out.println(pathId);
+            String filePath = pptMap.get("pptKey");
+            String fileUrl = rootPath + File.separator + filePath + File.separator + "resource" + File.separator + pathId;
+            String i = fileUrl.substring(fileUrl.length()-1, fileUrl.length());
+            fileUrl = fileUrl.substring(0, fileUrl.length()-1);
+            if(Integer.valueOf(i) > 0) {
+                fileUrl += i + ".html";
+            } else {
+                fileUrl += i + ".jpg";
+            }
+            FileInputStream is = new FileInputStream(new File(fileUrl));
+            OutputStream os = response.getOutputStream();
+            printFile(is, os);
+        } else {*/
+            // 根据pathId获取fileModel
         FileModel fileModel = this.fileService.findFileModelByHashCode(pathId);
         if (fileModel == null) {
             throw new RuntimeException("fileModel 不能为空");
@@ -171,25 +198,31 @@ public class ConventerController {
         if (fileFullPath != null) {
             fileUrl = rootPath + File.separator + fileFullPath;
         } else {
-            fileUrl = rootPath + File.separator + fileModel.getPathId()
-                    + File.separator + "resource" + File.separator + fileModel.getConventedFileName();
+            fileUrl = rootPath + File.separator + fileModel.getPathId() + File.separator + "resource" + File.separator + fileModel.getConventedFileName();
+            /*if("ppt".equals(fileUrl.substring(fileUrl.length()-8, fileUrl.length()-5))) {
+                pptMap.put("pptKey", fileModel.getPathId());
+            }*/
         }
         File file = new File(fileUrl);
+
         // 设置内容长度
         response.setContentLength((int) file.length());
 
         // 内容配置中要转码,inline 浏览器支持的格式会在浏览器中打开,否则下载
         String fullFileName = new String(fileModel.getConventedFileName());
-        response.setHeader("Content-Disposition", "inline;fileName=\""
-                + fullFileName + "\"");
+        response.setHeader("Content-Disposition", "inline;fileName=\"" + fullFileName + "\"");
 
         // 设置content-type
         response.setContentType(fileModel.getOriginalMIMEType());
-        FileInputStream is = null;
-        OutputStream os = null;
+        FileInputStream is = new FileInputStream(new File(fileUrl));
+        OutputStream os = response.getOutputStream();
+        printFile(is, os);
+
+    }
+
+
+    private void printFile(FileInputStream is, OutputStream os) throws IOException{
         try {
-            is = new FileInputStream(new File(fileUrl));
-            os = response.getOutputStream();
             byte[] bytes = new byte[1024];
             int tmp = 0;
             while ((tmp = is.read(bytes)) != -1) {
@@ -207,7 +240,6 @@ public class ConventerController {
             }
         }
     }
-
     @RequestMapping("aaa")
     public String test() {
         return "ppt";
