@@ -21,7 +21,7 @@
 
 ## 文件预览效果
 > 压缩文件
-![输入图片说明](https://img-blog.csdn.net/20180113201711325?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvY2NjMTIzNF8=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast"压缩文件预览.png")
+![输入图片说明](https://img-blog.csdn.net/20180113201711325?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvY2NjMTIzNF8=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast "压缩文件预览.png")
 
 > excel文件
 ![输入图片说明](https://img-blog.csdn.net/20180113202027808?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvY2NjMTIzNF8=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast "excel文件预览.png")
