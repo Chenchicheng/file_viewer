@@ -21,17 +21,17 @@
 
 ## 文件预览效果
 > 压缩文件
-![输入图片说明](https://github.com/Chenchicheng/file_viewer/blob/master/file-conventer/src/main/resources/static/images/compress.png "压缩文件预览.png")
+![输入图片说明](https://img-blog.csdn.net/20180113201711325?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvY2NjMTIzNF8=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast"压缩文件预览.png")
 
 > excel文件
-![输入图片说明](https://github.com/Chenchicheng/file_viewer/blob/master/file-conventer/src/main/resources/static/images/excel.png "excel文件预览.png")
+![输入图片说明](https://img-blog.csdn.net/20180113202027808?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvY2NjMTIzNF8=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast "excel文件预览.png")
 
 > word文件
-![输入图片说明](https://github.com/Chenchicheng/file_viewer/blob/master/file-conventer/src/main/resources/static/images/paper.png "word文件预览.png")
+![输入图片说明](https://img-blog.csdn.net/20180113202015623?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvY2NjMTIzNF8=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast "word文件预览.png")
 
 > ppt文件
-![输入图片说明](https://github.com/Chenchicheng/file_viewer/blob/master/file-conventer/src/main/resources/static/images/ppt.png "ppt文件预览.png")
+![输入图片说明](https://img-blog.csdn.net/20180113202352036?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvY2NjMTIzNF8=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast "ppt文件预览.png")
 
 > 图片
-![输入图片说明](https://github.com/Chenchicheng/file_viewer/blob/master/file-conventer/src/main/resources/static/images/image.png "图片预览.png")
+![输入图片说明](https://img-blog.csdn.net/20180113202739617?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvY2NjMTIzNF8=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast "图片预览.png")
 
