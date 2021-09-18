@@ -10,7 +10,7 @@ import java.util.List;
 public interface FileService {
 
     /**
-     * @param hashCode
+     * @param hashCode hashCode
      * @return FileModel
      */
     FileModel findFileModelByHashCode(String hashCode);
@@ -22,5 +22,10 @@ public interface FileService {
     List<String> findAllKeys();
 
 
-    List<String> getImageFilesOfPPT(String pathId);
+    /**
+     * 获取转换后的所有图片文件路径
+     * @param fileModel fileModel
+     * @return List<String>
+     */
+    List<String> getImageFilesOfPPT(FileModel fileModel);
 }

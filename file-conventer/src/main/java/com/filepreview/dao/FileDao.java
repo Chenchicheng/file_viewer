@@ -17,38 +17,43 @@ public interface FileDao {
 
     /**
      * 查询key对应的FileModel
-     * @param  hashCode
+     * @param  hashCode hashCode
      * @return FileModel
      */
     FileModel findByHashCode(String hashCode);
 
     /**
      * 保存文件
-     * @param in
-     * @param fileModel
+     * @param in in
+     * @param fileModel fileModel
      */
     void saveFile(InputStream in, FileModel fileModel);
 
     /**
      * @Description: 删除缓存map中的数据,并非真正的删除文件
-     * @param pathId
+     * @param pathId pathId
      * @return FileModel
      */
     FileModel removeFromMap(String pathId);
 
     /**
      * @Description: 回滚remove
-     * @param fileModel
+     * @param fileModel fileModel
      * @return int
      */
     int rollbackFromMap(FileModel fileModel);
 
     /**
-     * @Description: 删除该filemodel所有先关数据
-     * @param fileModel
+     * @Description: 删除该fileModel所有相关数据
+     * @param fileModel fileModel
      * @return int
      */
     int delete(FileModel fileModel);
 
-    List<String> getImageFilesOfPPT(String rootPath);
+    /**
+     * 获取转换后的所有图片文件路径
+     * @param fileModel fileModel
+     * @return List<String>
+     */
+    List<String> getImageFilesOfPPT(FileModel fileModel);
 }

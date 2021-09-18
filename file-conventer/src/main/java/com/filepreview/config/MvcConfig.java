@@ -15,7 +15,7 @@ import java.io.IOException;
  * Created by chicheng on 2018/1/2.
  */
 @Configuration
-public class MvcConfigur extends WebMvcConfigurerAdapter {
+public class MvcConfig extends WebMvcConfigurerAdapter {
     @Bean
     public ViewResolver viewResolver() {
         FreeMarkerViewResolver resolver = new FreeMarkerViewResolver();

@@ -15,7 +15,7 @@
 * 拉取项目到本地
 * 下载并安装openoffice，在项目application.yml文件中配置openoffice的安装路径
 * 造一个文件的下载地址，例如七牛云外链：http://p7ob9suqn.bkt.clouddn.com/5465010.doc （文件上传到七牛云仓库即可）
-* 运行FileConventerApplication，启动项目，访问地址为：localhost:(端口号)/fileConventer?filePath=http://p7ob9suqn.bkt.clouddn.com/5465010.doc
+* 运行FileConverterApplication，启动项目，访问地址为：localhost:(端口号)/fileConvert?filePath=http://p7ob9suqn.bkt.clouddn.com/5465010.doc
 
 ## 转换规则
 * 图片不进行转换,使用viewer.js展示

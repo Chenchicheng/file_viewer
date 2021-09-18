@@ -13,10 +13,7 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.UUID;
+import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
@@ -45,22 +42,22 @@ public class FileDaoImpl implements FileDao {
     public void init() {
         logger.info("FileDaoImpl init start ...");
         // 使用同步的map
-        this.fileModelMap = new ConcurrentHashMap<>( (int) (32 / 0.7));
+        this.fileModelMap = new ConcurrentHashMap<>((int) (32 / 0.7));
         // 根目录初始化
         File file = new File(root);
-        if(!file.exists()) {
+        if (!file.exists()) {
             //初始化不存在则创建目录
             file.mkdirs();
-        }else {
+        } else {
             // 存在的话,删除下面的所有内容
             deleteDir(file);
         }
         // 临时目录初始化
         File tempFile = new File(rootTemp);
-        if(!tempFile.exists()) {
+        if (!tempFile.exists()) {
             //初始化不存在则创建目录
             tempFile.mkdirs();
-        }else {
+        } else {
             // 存在的话,删除下面的所有内容
             deleteDir(tempFile);
         }
@@ -70,9 +67,7 @@ public class FileDaoImpl implements FileDao {
 
     @Override
     public List<String> findAllKeys() {
-        List<String> result = new ArrayList<String>();
-        result.addAll(this.fileModelMap.keySet());
-        return result;
+        return new ArrayList<String>(this.fileModelMap.keySet());
     }
 
     @Override
@@ -117,24 +112,24 @@ public class FileDaoImpl implements FileDao {
             }
         }
 
-        // 2个map中filemodel使用同一个对象,修改时会同步变化
+        // 2个map中fileModel使用同一个对象,修改时会同步变化
         fileModel.setState(FileModel.STATE_YXZ);
-        String filePath = fileModel.getTempDir() + File.separator +fileModel.getOriginalFile();
+        String filePath = fileModel.getTempDir() + File.separator + fileModel.getOriginalFile();
         // 得到文件hash编码，以此作为判断唯一文件的依据
         fileModel.setPathId(FileUtil.getFileHashCode(filePath));
         this.fileModelMap.put(fileModel.getPathId(), fileModel);
     }
 
     /**
-     * @Description: 删除文件夹下所有内容,不会删除文件夹本身
      * @param dir
+     * @Description: 删除文件夹下所有内容, 不会删除文件夹本身
      */
     private void deleteDir(File dir) {
         if (!dir.isDirectory()) {
             return;
         }
-        File[] childs = dir.listFiles();
-        for (File child : childs) {
+        File[] children = dir.listFiles();
+        for (File child : children) {
             if (child.isDirectory()) {
                 deleteDir(child);
             }
@@ -144,12 +139,10 @@ public class FileDaoImpl implements FileDao {
     }
 
     /**
-     * @Description: 得到一个唯一的目录
-     * @param num
-     *            重复尝试次数
-     * @param root
-     *            根目录
+     * @param num  重复尝试次数
+     * @param root 根目录
      * @return File
+     * @Description: 得到一个唯一的目录
      */
     private File getOnlyDir(int num, String root) {
         if (num == 0) {
@@ -180,13 +173,12 @@ public class FileDaoImpl implements FileDao {
     @Override
     public int delete(FileModel fileModel) {
         File dir = new File(fileModel.getTempDir());
-
         deleteDir(dir);
         // 此处连续尝试删除3次,有可能文件正在被其他线程打开,而删除失败
         for (int i = 0; i < 3; i++) {
             deleteDir(dir);
             boolean flag = dir.delete();
-            if(flag){
+            if (flag) {
                 // 删除成功,结束循环
                 break;
             }
@@ -196,7 +188,6 @@ public class FileDaoImpl implements FileDao {
                 e.printStackTrace();
             }
         }
-
         if (dir.exists()) {
             // 删除失败
             return 0;
@@ -206,18 +197,21 @@ public class FileDaoImpl implements FileDao {
     }
 
     @Override
-    public List<String> getImageFilesOfPPT(String pathId) {
-        File rootFile = new File(root + File.separator + pathId
-                                                + File.separator + "resource" );
-        File[] files = rootFile.listFiles();
-        List<String> list = new ArrayList<>();
-        for(File file : files) {
-            String subfix = FileUtil.getFileSufix(file.getName());
-            if(subfix.contains("jpg")) {
-                list.add(file.getAbsolutePath());
+    public List<String> getImageFilesOfPPT(FileModel fileModel) {
+        File rootFile = new File(fileModel.getConvertedFileDir());
+        String[] files = rootFile.list();
+        if (files == null) {
+            return null;
+        }
+        Map<Integer, String> map = new TreeMap<>();
+        String img = "img";
+        for (String file : files) {
+            if (file.contains("jpg")) {
+                String sort = file.substring(img.length(), file.lastIndexOf("."));
+                map.put(Integer.valueOf(sort),  file);
             }
         }
-        return list;
+        return new ArrayList<>(map.values());
     }
 
 

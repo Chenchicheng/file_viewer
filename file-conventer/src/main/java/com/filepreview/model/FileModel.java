@@ -1,5 +1,6 @@
 package com.filepreview.model;
 
+import java.io.File;
 import java.io.Serializable;
 
 /**
@@ -70,15 +71,33 @@ public class FileModel implements Serializable {
     /**
      * @Field conventedFileName 转换后的文件名称
      */
-    private String conventedFileName;
+    private String convertedFileName;
     /**
      * @Fields state : 文件状态 0 无效,1 未下载,2 已下载,3 已转换
      */
     private int state;
 
+    /**
+     * @Fields convertedFilePath 转换后的文件路径
+     */
+    private String convertedFilePath;
 
-    public String getConventedFileName() {
-        return conventedFileName;
+    /**
+     * @Fields convertedFilePath 转换后的文件目录
+     */
+    private String convertedFileDir;
+
+    /**
+     * @Fields relativeDir 转换后相对文件目录
+     */
+    private String relativeFileDir;
+
+    public String getFilePath() {
+        return getTempDir() + File.separator + getOriginalFile();
+    }
+
+    public String getConvertedFileName() {
+        return convertedFileName;
     }
 
     public String getOriginal() {
@@ -162,7 +181,31 @@ public class FileModel implements Serializable {
         this.limitMs = limitMs;
     }
 
-    public void setConventedFileName(String conventedFileName) {
-        this.conventedFileName = conventedFileName;
+    public void setConvertedFileName(String convertedFileName) {
+        this.convertedFileName = convertedFileName;
+    }
+
+    public String getConvertedFilePath() {
+        return convertedFilePath;
+    }
+
+    public void setConvertedFilePath(String convertedFilePath) {
+        this.convertedFilePath = convertedFilePath;
+    }
+
+    public String getConvertedFileDir() {
+        return convertedFileDir;
+    }
+
+    public void setConvertedFileDir(String convertedFileDir) {
+        this.convertedFileDir = convertedFileDir;
+    }
+
+    public String getRelativeFileDir() {
+        return relativeFileDir;
+    }
+
+    public void setRelativeFileDir(String relativeFileDir) {
+        this.relativeFileDir = relativeFileDir;
     }
 }

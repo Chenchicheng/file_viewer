@@ -6,9 +6,9 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 
 @SpringBootApplication
 @EnableScheduling
-public class FileConventerApplication {
+public class FileConverterApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(FileConventerApplication.class, args);
+		SpringApplication.run(FileConverterApplication.class, args);
 	}
 }

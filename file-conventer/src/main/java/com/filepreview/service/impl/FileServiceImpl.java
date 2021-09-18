@@ -29,8 +29,8 @@ public class FileServiceImpl implements FileService {
     }
 
     @Override
-    public List<String> getImageFilesOfPPT(String pathId) {
-        return this.fileDao.getImageFilesOfPPT(pathId);
+    public List<String> getImageFilesOfPPT(FileModel fileModel) {
+        return this.fileDao.getImageFilesOfPPT(fileModel);
     }
 
 
