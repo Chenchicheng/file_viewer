@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="jodconverter-web:war">
-    <output-path>$PROJECT_DIR$/jodconverter-web/target</output-path>
-    <root id="archive" name="jodconverter-web.war">
-      <element id="artifact" artifact-name="jodconverter-web:war exploded" />
-    </root>
-  </artifact>
-</component>
