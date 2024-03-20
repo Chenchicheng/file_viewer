@@ -98,7 +98,7 @@ public class ConvertController {
         }
         // 判断文件类型，不同的文件做不同的展示
         if (FileType.pdfType.contains(subFix.toLowerCase())) {
-            return "html";
+            return "office";
         } else if (FileType.textType.contains(subFix.toLowerCase())) {
             return "txt";
         } else if (FileType.imgType.contains(subFix.toLowerCase())) {
